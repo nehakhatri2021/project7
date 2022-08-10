@@ -5,11 +5,11 @@ import pickle
 
 
 app = Flask(__name__)
-model_RF = pickle.load(open('RF_project-7(minor).pkl','rb'))
-model_DT = pickle.load(open('DT_project7minor.pkl','rb'))
-model_KNN = pickle.load(open('KNN_project7minor.pkl','rb'))
-model_SVM = pickle.load(open('SVM_project7minor.pkl','rb'))
-model_NB = pickle.load(open('NB_project7minor.pkl','rb'))
+model_RF = pickle.load(open('RF_model.pkl','rb'))
+model_DT = pickle.load(open('DT_model.pkl','rb'))
+model_KNN = pickle.load(open('KNN_model.pkl','rb'))
+model_SVM = pickle.load(open('SVM_model.pkl','rb'))
+model_NB = pickle.load(open('NB_model.pkl','rb'))
 
 
 @app.route('/')
